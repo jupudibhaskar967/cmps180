@@ -32,9 +32,9 @@ CREATE TABLE Sales(
    store_id		INT NOT NULL,	
    customer_id		INT NOT NULL,
    product_id		INT NOT NULL,
-   date_p		TEXT NOT NULL,
+   date		TEXT NOT NULL,
    quantity		INT,
    price		INT,
    shipped		BOOLEAN,
-   PRIMARY KEY(store_id, customer_id, product_id, date_p)
+   PRIMARY KEY(store_id, customer_id, product_id, date)
 );
