@@ -29,11 +29,12 @@ CREATE TABLE Products(
 
 
 CREATE TABLE Sales(
-   store_id		INT PRIMARY KEY,	
+   store_id		INT,	
    customer_id		INT,
    product_id		INT,
    date_p		TEXT,
    quantity		INT,
    price		INT,
    shipped		BOOLEAN
+   PRIMARY KEY(store_id, customer_id, product_id, date_p)
 );
