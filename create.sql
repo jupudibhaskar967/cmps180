@@ -29,12 +29,16 @@ CREATE TABLE Products(
 
 
 CREATE TABLE Sales(
-   store_id		INT NOT NULL,	
-   customer_id		INT NOT NULL,
-   product_id		INT NOT NULL,
-   date		TEXT NOT NULL,
+   store_id		INT, 
+   customer_id		INT,
+   product_id		INT,
+   date			TEXT,
    quantity		INT,
    price		INT,
    shipped		BOOLEAN,
    PRIMARY KEY(store_id, customer_id, product_id, date)
 );
+
+
+/*INSERT INTO Sales VALUES (1231231, 45, 53, '1994-11-28', 10,11,TRUE);*/
+
