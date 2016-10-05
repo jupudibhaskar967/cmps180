@@ -1,7 +1,7 @@
 DROP SCHEMA lab1 CASCADE;
 CREATE SCHEMA lab1;
 
-CREATE TABLE STORES(
+CREATE TABLE Stores(
    store_id INT PRIMARY KEY,
    address	TEXT,
    manager	TEXT
@@ -38,7 +38,4 @@ CREATE TABLE Sales(
    shipped		BOOLEAN,
    PRIMARY KEY(store_id, customer_id, product_id, date)
 );
-
-
-/*INSERT INTO Sales VALUES (1231231, 45, 53, '1994-11-28', 10,11,TRUE);*/
 
