@@ -1,0 +1,113 @@
+#####################################################################
+Creating the tables
+#####################################################################
+
+1) Connect to server
+
+2) Execute create.sql file
+=> \i create.sql
+
+Now 4 tables should be created with the given constraints
+with no data in them
+
+
+Double check with '\d' command
+
+
+=> \d
+          List of relations
+ Schema |   Name    | Type  |  Owner  
+--------+-----------+-------+---------
+ lab2   | customers | table | njupudi
+ lab2   | products  | table | njupudi
+ lab2   | sales     | table | njupudi
+ lab2   | stores    | table | njupudi
+(4 rows)
+
+
+For individual tables check with (\d table_name)
+to verify the constraints on the fields of tables.
+
+
+#####################################################################
+Executing the queries
+#####################################################################
+
+=> \i query1.sql
+=> \i query2.sql
+=> \i query3.sql
+=> \i query4.sql
+=> \i query5.sql
+=> \i query6.sql
+
+
+
+#####################################################################
+Sample output
+#####################################################################
+Sample data is inserted to the tables using load_values_lab2.sql
+file that is given by TA and this is the output for each of 6 queries.
+
+
+
+=> \i query1.sql
+         name         
+----------------------
+ Computer Zone       
+ Pacific Surf Shop   
+ Bookshop Santa Cruz 
+(3 rows)
+
+
+
+=> \i query2.sql
+         name         |     address     
+----------------------+-----------------
+ Robert Johnson       | 1213 Bridge Ave
+ Kathy Jones          | 1984 Forest Ave
+ Angie Smith          | 411 Broadway St
+(3 rows)
+
+
+=> \i query3.sql
+         name         | store_id |     address     
+----------------------+----------+-----------------
+ Robert Johnson       |      100 | 1213 Bridge Ave
+ Shel Finkelstein     |      300 | 3039 River St
+ Shel Finkelstein     |      600 | 3039 River St
+ Shel Finkelstein     |      900 | 3039 River St
+(4 rows)
+
+
+=> \i query4.sql
+ product_id |         name         
+------------+----------------------
+       5000 | Corn Flakes         
+       3000 | Rice Krispies       
+(2 rows)
+
+
+=> \i query5.sql
+ customer_id | purchase_date 
+-------------+---------------
+          10 | 2016-10-01
+           6 | 2016-07-04
+           6 | 2016-07-04
+(3 rows)
+
+
+=> \i query6.sql
+         name         |     manufacturer     | purchase_date | sum 
+----------------------+----------------------+---------------+-----
+ Rice Krispies        | Kellogg              | 2016-07-04    |  25
+ Iphone 7             | Apple                | 2016-09-15    |   4
+ Tide Liquid          | Tide                 | 2016-10-01    |   5
+ Rice Krispies        | Kellogg              | 2016-10-01    |  25
+ Iphone 7             | Apple                | 2016-09-30    |   5
+ Corn Flakes          | Kellogg              | 2016-07-04    |  20
+ Corn Flakes          | Kellogg              | 2016-10-01    |   4
+ Corn Flakes          | Kellogg              | 2016-10-02    |  30
+(8 rows)
+
+
+

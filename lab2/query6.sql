@@ -1,0 +1,1 @@
+select products.name,products.manufacturer,sales.purchase_date,sum(sales.quantity) from sales INNER JOIN products on sales.product_id = products.product_id group by products.name,products.manufacturer,sales.purchase_date;

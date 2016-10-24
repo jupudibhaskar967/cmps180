@@ -1,0 +1,1 @@
+SELECT sales.customer_id,sales.purchase_date FROM sales INNER JOIN stores on stores.manager = 'George Jetson' AND sales.store_id = stores.store_id INNER JOIN products on products.manufacturer = 'Kellogg' AND products.product_id = sales.product_id where sales.shipped = TRUE AND sales.price > 49.98;
