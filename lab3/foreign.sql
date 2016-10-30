@@ -1,0 +1,3 @@
+ALTER TABLE sales ADD FOREIGN KEY (store_id) REFERENCES Stores;
+ALTER TABLE sales ADD FOREIGN KEY (customer_id) REFERENCES Customers;
+ALTER TABLE sales ADD FOREIGN KEY (product_id) REFERENCES Products;
