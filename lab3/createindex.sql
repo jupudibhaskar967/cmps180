@@ -1,1 +1,1 @@
-CREATE INDEX my_index ON customers (name,address);
+CREATE INDEX ON customers (name,address);
