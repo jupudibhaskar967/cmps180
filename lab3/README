@@ -13,6 +13,6 @@ respectively. All of them are grouped together as mentioned in the lab3
 description.
 
 
-3) In createview.sql, I have added comment (after the query) with 
+3) In queryview.sql, I have added comment (after the query) with 
 answer of the query before the deletions. Now do the deletions 
 and then run the query again and mentioned the result in second comment.
