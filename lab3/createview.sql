@@ -1,11 +1,7 @@
-
 /*2.6.1*/
 --DROP VIEW unshipped_products cascade;
 CREATE VIEW unshipped_products AS
 select name,manufacturer from Products INNER JOIN sales on sales.shipped=FALSE AND products.product_id = sales.product_id ORDER BY name,manufacturer;
-
-
-
 
 /*2.6.2*/
 
@@ -42,6 +38,6 @@ select DISTINCT manufacturer from unshipped_products;
 */
 
 /*CONCLUSION*/
-/*Yes I get different results (with the given data)*/
+/*Yes I get different answer (with the given data)*/
 
 

@@ -38,7 +38,7 @@ insert into sales values(200,1,1000,'2053-09-15',1,-100,TRUE);
 
 /*2 unit tests for general constraint 3 - A record in Customers may not have a NULL value for name.*/
 /*unit test that meets general constraint 3*/
-insert into customers values(28,'Optimus Prime',' 101 Cybertron street','optimus@autobot.edu');
+insert into customers values(28,'Optimus Prime','101 Cybertron street','optimus@autobot.edu');
 /*unit test that violates general constraint 3*/
 insert into customers values(29,NULL,'101 chestnut street','dummy@ucsc.edu');
 

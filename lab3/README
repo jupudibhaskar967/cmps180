@@ -1,0 +1,18 @@
+################################
+NOTE
+################################
+1) If you are testing createview.sql multiple times
+then uncomment the first line in the sql file. This is
+just to make sure that the view is dropped.
+
+
+2) In unittests.sql, I have added comment above every query.
+In that the first 3 queries violates the foreign key constraints
+and next 8 queries satisfy and violate the general constraints 
+respectively. All of them are grouped together as mentioned in the lab3
+description.
+
+
+3) In createview.sql, I have added comment (after the query) with 
+answer of the query before the deletions. Now do the deletions 
+and then run the query again and mentioned the result in second comment.
