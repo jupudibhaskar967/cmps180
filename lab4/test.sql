@@ -1,0 +1,1 @@
+select products.name,sum(sales.quantity*sales.unit_price) from products inner join sales on sales.product_id = products.product_id group by products.name order by sum(sales.quantity*sales.unit_price) DESC;

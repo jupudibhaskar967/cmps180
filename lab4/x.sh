@@ -1,0 +1,2 @@
+javac RunSalesApplication.java
+java RunSalesApplication
