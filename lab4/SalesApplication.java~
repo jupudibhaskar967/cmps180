@@ -68,12 +68,11 @@ public class SalesApplication {
      */
     public int addProduct(String name, String manufacturer) throws SQLException{
         int productId = 0;
-        // your code here
+        // your code here        
         try{
+        	connection.setAutoCommit(false);
         	connection.setTransactionIsolation(Connection.TRANSACTION_SERIALIZABLE);
-        	connection.setAutoCommit(false);       	
         	Statement stat1	= connection.createStatement();
-        	Random random = new Random();
         	String query = "select product_id,name,manufacturer from products;";
         	List<Integer> product_id_list = new ArrayList<Integer>();
         	ResultSet Menu = stat1.executeQuery(query);
@@ -98,10 +97,6 @@ public class SalesApplication {
         	connection.rollback();
 		return -1;
 	}
-        
-        
-
-        // end of your code
     }
 
 };

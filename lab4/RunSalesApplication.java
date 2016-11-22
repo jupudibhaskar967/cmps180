@@ -50,7 +50,7 @@ public class RunSalesApplication
              int product_id = app.addProduct(name,manufacturer);
              System.out.println(product_id);             
              /*part-2a*/
-             name = "Bumblebe1e";
+             name = "Bumblebee";
              manufacturer = "Cybertron";
              product_id = app.addProduct(name,manufacturer);
              System.out.println(product_id);            
