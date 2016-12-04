@@ -1,0 +1,20 @@
+#####################################
+Steps to execute
+#####################################
+
+#\i create_lab4.sql
+#\i load_values_lab4.sql
+
+
+# THIS IS IMPORTANT AS I HAVE WRITTEN STORED PROCEDURE IN A NEW SQL FILE: create_storedproc.sql
+#\i create_storedproc.sql
+
+
+Next compile and execute driver using this:
+
+compile:
+#javac RunSalesApplication.java SalesApplication.java 
+
+execute:
+#java RunSalesApplication 
+
